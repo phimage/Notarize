@@ -5,19 +5,6 @@ A tool to notarize your  `.app` files.
 
 ## Install
 
-### Using Homebrew (swiftbrew)
-
-If not already installed yet, install [Swiftbrew](https://github.com/swiftbrew/Swiftbrew) with [Homebrew](https://brew.sh/index_fr)
-
-```
-brew install swiftbrew/tap/swiftbrew
-```
-
-then type 
-```
-swift brew install phimage/Notarize
-```
-
 ### Using sources
 
 ```
