@@ -13,26 +13,31 @@ public struct Config: Codable {
     public let username: String?
     public let password: String?
     public let ascProvider: String?
+    public let reporter: String
 
     enum CodingKeys: String, CodingKey {
         case username
         case password
         case ascProvider
+        case reporter
     }
 
     public static let fileName = ".notarize.yml"
     public static let `default` = Config.init()
+    public static let defaultReporter = "json"
 
     private init() {
         self.username = nil
         self.password = nil
         self.ascProvider = nil
+        reporter = Config.defaultReporter
     }
 
-    init(username: String, password: String, ascProvider: String? = nil) {
+    init(username: String, password: String, ascProvider: String? = nil, reporter: String = Config.defaultReporter) {
         self.username = username
         self.password = password
         self.ascProvider = ascProvider
+        self.reporter = reporter
     }
 
     public init(from decoder: Decoder) throws {
@@ -40,6 +45,7 @@ public struct Config: Codable {
         username = try container.decodeIfPresent(String.self, forKey: .username)
         password = try container.decodeIfPresent(String.self, forKey: .password)
         ascProvider = try container.decodeIfPresent(String.self, forKey: .ascProvider)
+        reporter = try container.decodeIfPresent(String.self, forKey: .reporter) ?? Config.defaultReporter
     }
 
     public init(url: URL) throws {

@@ -8,6 +8,8 @@ public struct NotarizeFrontend {
     public func run() {
         let registry = CommandRegistry<CommandantError<()>>()
         registry.register(NotarizeCommand())
+        registry.register(HistoryCommand())
+        registry.register(InfoCommand())
         registry.register(HelpCommand(registry: registry))
         registry.register(VersionCommand())
 
