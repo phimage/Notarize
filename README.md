@@ -52,18 +52,28 @@ $ notarize history --username "me" --password "keychain@dummy"
 ```
 $ notarize info --uuid a1b2c3d4e5f6 --username "me" --password "keychain@dummy"
 ```
+
+### Use a reporter in any command
+
+```
+$ notarize info --uuid a1b2c3d4e5f6 --username "me" --password "keychain@dummy" --reporter xml
+```
+
+```
+$ notarize info --uuid a1b2c3d4e5f6 --username "me" --password "keychain@dummy" --reporter json
+```
  
 ## Configuration
 
-You can configure IBGraph by adding a `.notarize.yml` file in your working directory
+You can configure notarize by adding a `.notarize.yml` file in your working directory
 
 
 | key                  | description                 |
 |:---------------------|:--------------------------- |
 | `username`           | The username.    |
 | `password`           | The password.    |
-| `ascProvider`     | The asc provider |
-| `reporter`     | How to display information: json, xml |
+| `ascProvider`        | The asc provider |
+| `reporter`           | How to display information: json, xml |
 
 ```yaml
 username: "me"
