@@ -1,5 +1,11 @@
 # notarize
-[![Swift 5.1](https://img.shields.io/badge/Swift-5.1-orange.svg?style=flat)](https://developer.apple.com/swift/)
+[![Build Status][build-shield]][build-url]
+[![Swift 5.1][swift-shield]][swift-url]
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 
 A tool to notarize your  `.app` files.
 
@@ -112,3 +118,20 @@ Fork and make PR
 - with an option like verbose, show log for each step
 - other output format ie. reporter
 - better error printing -> formatted by reporter
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/phimage/Notarize.svg?style=flat
+[contributors-url]: https://github.com/phimage/Notarize/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/phimage/Notarize.svg?style=flat
+[forks-url]: https://github.com/phimage/Notarize/network/members
+[stars-shield]: https://img.shields.io/github/stars/phimage/Notarize.svg?style=flat
+[stars-url]: https://github.com/phimage/Notarize/stargazers
+[issues-shield]: https://img.shields.io/github/issues/phimage/Notarize.svg?style=flat
+[issues-url]: https://github.com/phimage/Notarize/issues
+[license-shield]: https://img.shields.io/github/license/phimage/Notarize.svg?style=flat
+[license-url]: https://github.com/phimage/Notarize/blob/master/LICENSE
+[swift-shield]: https://img.shields.io/badge/Swift-5.1-orange.svg?style=flat
+[swift-url]: https://developer.apple.com/swift/
+[build-shield]: https://travis-ci.org/phimage/Notarize.svg?branch=master
+[build-url]: https://travis-ci.org/phimage/Notarize
