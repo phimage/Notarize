@@ -3,6 +3,6 @@ osx_image: xcode11.1
 before_script:
   - swiftlint --strict
 script:
-  - swift test
+  - swift build
 before_deploy:
   - make portable_zip
