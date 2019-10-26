@@ -102,7 +102,7 @@ $ notarize --app Your/App.app --config "path/to/.notarize.yml`"
 
 ## Dependencies
 
-* [NotarizationProcess](https://github.com/phimage/NotarizationProcess)
+* [NotarizationProcess](https://github.com/phimage/NotarizeProcess)
 * [Commandant](https://github.com/Carthage/Commandant)
 * [Yams](https://github.com/jpsim/Yams)
 
