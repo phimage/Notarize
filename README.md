@@ -33,6 +33,7 @@ git clone https://github.com/phimage/Notarize.git
 cd Notarize
 make install
 ```
+_Xcode must be installed_
 
 ## Usage
 
