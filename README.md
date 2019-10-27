@@ -124,6 +124,7 @@ Fork and make PR
 - with an option like verbose, show log for each step
 - other output format ie. reporter
 - better error printing -> formatted by reporter
+- maybe save app name and path with notarization uuid to have further information when getting history or info
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
