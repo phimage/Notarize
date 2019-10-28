@@ -6,6 +6,7 @@
 
 import Foundation
 import NotarizationInfo
+import NotarizeProcess
 
 struct JSONReporter: Reporter {
 
@@ -23,6 +24,22 @@ struct JSONReporter: Reporter {
         guard let data = try? JSONEncoder().encode(encodable) else {
             return ""
         }
-        return String(data: data, encoding: .utf8)!
+        return String(data: data, encoding: .utf8) ?? ""
+    }
+
+    static func generateReport(error: Error) -> String {
+        if let error = error as? NotarizeProcessError {
+            switch error {
+            case .notaryError(let notarizationError):
+                return generateReport(encodable: notarizationError)
+            case .processError:
+                return "\(error)"
+            case .decodingError:
+                return "\(error)"
+            case .timeOut:
+                return "\(error)"
+            }
+        }
+        return "\(error)"
     }
 }

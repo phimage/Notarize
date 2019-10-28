@@ -124,7 +124,6 @@ Fork and make PR
 - allow to skip some step (like staple, or wait)
 - with an option like verbose, show log for each step
 - other output format ie. reporter
-- better error printing -> formatted by reporter
 - maybe save app name and path with notarization uuid to have further information when getting history or info
 
 <!-- MARKDOWN LINKS & IMAGES -->

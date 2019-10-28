@@ -49,7 +49,8 @@ struct NotarizeCommand: CommandProtocol {
             }
             return .success(())
         } catch {
-            print("\(error)") // TODO better report for error
+            let output = reporter.generateReport(error: error)
+            print(output)
             exit(1)
         }
     }
